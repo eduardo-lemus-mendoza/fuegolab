@@ -3,13 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FuegoLab</title>
+
+    <title>FuegoLab | Inteligencia Satelital de Incendios México (Sentinel-2)</title>
+
+    <meta name="description" content="Geoportal de análisis forense de incendios forestales en México (2022-2024). Herramienta para generar enlaces directos a imágenes satelitales Sentinel-2 en Copernicus Browser para +20,000 eventos.">
+    <meta name="keywords" content="Incendios Forestales México, Sentinel-2, Copernicus Browser, Remote Sensing, Eduardo Lemus Mendoza, CONAFOR, Análisis Geoespacial">
+    <meta name="author" content="Eduardo Lemus Mendoza">
+
+    <meta property="og:title" content="FuegoLab: Buscador Satelital de Incendios">
+    <meta property="og:description" content="Acceso directo a imágenes Sentinel-2 de +20,000 incendios históricos en México. Auditoría ambiental automatizada.">
+    <meta property="og:image" content="https://eduardo-lemus-mendoza.github.io/fuegolab/img/ss_fuegolab.png">
+    <meta property="og:url" content="https://eduardo-lemus-mendoza.github.io/fuegolab/">
+    <meta property="og:type" content="website">
+    
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "FuegoLab México",
+        "applicationCategory": "EnvironmentalScienceApplication",
+        "browserRequirements": "Requires JavaScript",
+        "author": {
+          "@type": "Person",
+          "name": "Eduardo Lemus Mendoza",
+          "jobTitle": "Arquitecto de Soluciones Geoespaciales",
+          "url": "https://www.linkedin.com/in/eduardo-lemus-mendoza/",
+          "sameAs": [
+            "https://github.com/eduardo-lemus-mendoza",
+            "https://www.udemy.com/user/eduardo-lemus-mendoza/"
+          ]
+        },
+        "description": "Aplicación de inteligencia geoespacial para la visualización y consulta satelital de incendios forestales históricos en México usando Sentinel-2.",
+        "featureList": "Búsqueda histórica de incendios, Enlaces profundos a Copernicus Browser, Filtrado por superficie afectada"
+      }
+    </script>    
+    
 </head>
 <body>
 <header class="navbar navbar-dark bg-dark p-3">
@@ -70,7 +105,7 @@
         
             Geoportal creado por <b>Eduardo Lemus</b>
             <br>
-            Contacto: <b>geobuscador.sig@gmail.com</b>
+            Contacto: <a href="https://www.linkedin.com/in/eduardo-lemus-mendoza/">LinkedIn</a>
         
         </div>
         <div class="modal-footer">
@@ -123,3 +158,4 @@
     <script src="geojson.js"></script>
 </body>
 </html>
+
